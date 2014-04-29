@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/mnikki137chefclass",
+    "validation_client_name": "mnikki137chefclass-validator",
+    "validation_key_path": ".chef/mnikki137chefclass-validator.pem",
+    "client_key": ".chef/mnikki137.pem",
+    "node_name": "mnikki137"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
